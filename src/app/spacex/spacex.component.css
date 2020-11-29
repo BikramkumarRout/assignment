@@ -4,10 +4,6 @@
     margin-bottom: 15px;
 }
 
-.mt-3, .my-3 {
-  margin-top: 7rem!important;
-}
-
 @media (min-width: 1200px){
 .container, .container-lg, .container-md, .container-sm, .container-xl {
     max-width: 1599px;
@@ -17,10 +13,6 @@
   flex: 1;
 }
 
-a {
-  -webkit-transition: .25s all;
-  transition: .25s all;
- }
  .card {
    padding-left:auto;
    padding-right:auto;
@@ -44,7 +36,9 @@ a {
    margin-left:auto;
    margin-right:auto;
  }
-
+a:link:active{
+  background-color: black;
+}
 
  .bttn {
   margin: 10px auto;
@@ -65,10 +59,12 @@ a {
   font-size: 20px;
   border-radius: 8px;
   cursor: pointer;
-  height: 40px;
 }
-.bttn a:hover {
+  .bttn a:hover{
   background-color: green;
+}  
+.active{
+background-color: grey !important;
 }
 
 .card {

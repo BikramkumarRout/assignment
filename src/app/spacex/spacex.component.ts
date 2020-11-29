@@ -12,9 +12,10 @@ export class SpacexComponent implements OnInit {
   LaunchSuccessFilter: any;
   LaunchLandFilter: any;
   all: any;
-   years = [];
+  years = [];
   isLauncSuccess = false;
   isLandSuccess = false;
+  selectedYear;
 
   constructor(
     private mainService: ApiService
@@ -35,7 +36,7 @@ export class SpacexComponent implements OnInit {
   }
 
   filterByYear(year): void {
-    console.log('1111111111111', year);
+    this.selectedYear = year;
     this.mainService.getLaunchProgramsByYear(year, this.isLauncSuccess, this.isLandSuccess).subscribe((data) => {
       this.spacedata = data;
     });

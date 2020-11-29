@@ -10,7 +10,7 @@ import { SpacexComponent } from './spacex/spacex.component';
 
 @NgModule({
   declarations: [
-     AppComponent,
+    AppComponent,
     SpacexComponent
   ],
   imports: [
